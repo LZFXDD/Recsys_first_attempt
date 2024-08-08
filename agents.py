@@ -28,6 +28,7 @@ class PerceiveAgent:
             examples=self.preceive_examples,
             scratchpad=self.scratchpad,
         )
+
 ###字符串处理###
 def format_string(string: str) -> str:
     return string.strip('\n').strip().replace('\n', '')

@@ -9,8 +9,7 @@ Movie information:
 File title:{title}
 Year of release:{year}
 Genres:{genres}
-Main plot:
-"""
+Main plot:"""
 
 perceive_agent_prompt = PromptTemplate(
                             input_variables=['examples', 'title', 'year', 'genres'],
