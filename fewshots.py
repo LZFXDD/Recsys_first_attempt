@@ -11,12 +11,6 @@ Year of release: 1993
 Genres: Drama
 Main plot: In the 1993 drama "What's Eating Gilbert Grape," Gilbert Grape, a man living in a small Midwestern town, struggles to manage his family's struggling grocery store while caring for his mentally challenged older brother, Arnie. As Gilbert navigates the complexities of family life and his own feelings of isolation, he forms an unexpected bond with a pregnant teen, Ruthie, which challenges his views on love and responsibility. The film delves into themes of family, self-discovery, and the search for purpose and connection.
 
-Movie information: 
-Film title: Frank and Ollie
-Year of release: 1995
-Genres: Documentary
-Main plot: "Frank and Ollie," released in 1995, is a documentary that celebrates the creative partnership of Disney animators Frank Thomas and Ollie Johnston. The film's main plot explores their careers at Walt Disney Animation Studios, highlighting their contributions to iconic films like "Pinocchio," "Cinderella," and "The Little Mermaid." It delves into their unique animation techniques, the evolution of Disney's storytelling, and the personal anecdotes and insights they shared with the world, offering a heartfelt look at the art of animation and the legacy of Disney's legendary animators.
-
 Movie information:
 Film title: True Romance
 Year of release: 1993

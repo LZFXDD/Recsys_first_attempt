@@ -8,9 +8,11 @@ from langchain.prompts import PromptTemplate
 from llm import AnyOpenAILLM
 from fewshots import PERCEIVE_EXAMPLES
 from prompts import perceive_agent_prompt
+from dataset_preprocess import dataset
+
 class PerceiveAgent:
     def __init__(self,
-                 docstore: Docstore = Wikipedia(),
+                 movidId: int,
                  agent_prompt: PromptTemplate = perceive_agent_prompt,
                  preceive_llm: AnyOpenAILLM = AnyOpenAILLM(
                      temperature=0,
@@ -18,15 +20,20 @@ class PerceiveAgent:
                      model_kwargs={"stop": "\n"},
                      openai_api_key=os.environ['OPENAI_API_KEY']
                  )):
-        self.docstore = DocstoreExplorer(docstore)
+        self.movidId = movidId
         self.llm = preceive_llm
         self.preceive_examples = PERCEIVE_EXAMPLES
         self.agent_prompt = agent_prompt
+    def perceive_agent(self) -> str:
+
+        return format_string(self.llm(self._build_agent_prompt()))
 
     def _build_agent_prompt(self) -> str:
         return self.agent_prompt.format(
             examples=self.preceive_examples,
-            scratchpad=self.scratchpad,
+            title=dataset[self.movidId][0],
+            year=dataset[self.movidId][1],
+            genres=dataset[self.movidId][2],
         )
 
 ###字符串处理###
