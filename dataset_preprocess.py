@@ -16,10 +16,9 @@ def extract_title_year(text):
 
 for row in movies_dataset.itertuples(index=False):
     movie_info = []
-    # 信息以movieId为键，值按顺序依次为title, year, genres
-    movie_info.append(extract_title_year(row[1])[0])
+    # 信息以title为键，值按顺序依次为year, genres
     movie_info.append(extract_title_year(row[1])[1])
     movie_info.append(row[2]. split('|'))
-    
-    dataset[row[0]] = movie_info
+
+    dataset[extract_title_year(row[1])[0]] = movie_info
 

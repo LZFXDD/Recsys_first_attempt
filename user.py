@@ -2,9 +2,10 @@ from typing import List
 
 
 class UserProfile:
-    def __init__(self, age: int, gender: str, likes: List[str], dislikes: List[str], comment: List[str]):
+    def __init__(self, age: int, gender: str, likes: List[str], dislikes: List[str], comment: List[str], preferences: List[str]):
         self._age = age
         self._gender = gender
         self._likes = likes
         self._dislikes = dislikes
+        self._preferences = preferences
         self._history_comment = comment
